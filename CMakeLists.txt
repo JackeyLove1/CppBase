@@ -7,5 +7,7 @@ list(APPEND SRCS "defer.h"
         "macros.h"
         "status.h")
 message("SRCS " ${SRCS})
+
 # test
 add_executable(defer_test defer_test.cpp ${SRCS})
+add_executable(status_test status_test.cpp ${SRCS})
